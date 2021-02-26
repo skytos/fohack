@@ -1,5 +1,3 @@
-from sys import argv
-
 def same(a, b):
     c = 0
     for i in range(len(a)):
@@ -54,7 +52,7 @@ def decision_tree(same_classes, word_length):
                 best_tree = tree
         return best_depth, best_tree
     
-    return rec(set(range(len(same_classes))), 0, 5)
+    return rec(set(range(len(same_classes))), 0, 6)
 
 def test(words, decision_tree):
     for answer in range(len(words)):
